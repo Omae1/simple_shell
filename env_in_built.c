@@ -1,5 +1,10 @@
 #include "main.h"
 
+void myShell(void);
+/**
+ * myShell - implements a custom shell
+ * Return: desci of the return  value
+ */
 void myShell(void)
 {
 char input[MAX_INPUT_SIZE];
@@ -62,8 +67,4 @@ waitpid(pid, &status, 0);
 }
 }
 }
-int main(void)
-{
-myShell();
-return (0);
-}
+

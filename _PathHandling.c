@@ -1,5 +1,6 @@
 #include "main.h"
 
+void custom_perror(const char *msg);
 /**
  * custom_perror - handle err function to stderr
  * @msg: points to null terminattedd str
@@ -9,11 +10,11 @@ void custom_perror(const char *msg)
 write(STDERR_FILENO, msg, _strlen(msg));
 write(STDERR_FILENO, "\n", 1);
 }
-
 /**
  * custom_tokenize - tokenizes inp str to arrayy of arg
  * @args: stores tokenized arg
  * @max_args: maximum no of arg to stoore
+ * @input: str to be tokenized
  * Return: no of arg
  */
 int custom_tokenize(char *input, char *args[], int max_args)
@@ -42,7 +43,6 @@ return (1);
 }
 return (0);
 }
-
 /**
  * customShell - allows userr enterr & execut cmds
  * @argc: no of arg
