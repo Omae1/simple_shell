@@ -75,3 +75,28 @@ count++;
 }
 return (count);
 }
+
+/**
+*_strcat - appends src string to destination string
+*@dest: destination string
+*@src: source string
+*Return: appended string
+*/
+char *_strcat(char *dest, const char *src)
+{
+char *originalDest = dest;
+
+while (*dest != '\0')
+{
+dest++;
+}
+while (*src != '\0')
+{
+*dest = *src;
+dest++;
+src++;
+}
+*dest = '\0';
+
+return (originalDest);
+}
