@@ -1,10 +1,4 @@
-/*
- * File: err_msgs1.c
- * Auth: Alex Yu
- *       Brennan D Baraban
- */
-
-#include "shell.h"
+#include "main.h"
 
 char *error_env(char **args);
 char *error_1(char **args);
@@ -12,8 +6,8 @@ char *error_2_exit(char **args);
 char *error_2_cd(char **args);
 char *error_2_syntax(char **args);
 /**
- * error_env - Creates an error message for shellby_env errors.
- * @args: An array of arguments passed to the command.
+ * error_env - Cenv errors.
+ * @args: An arrommand.
  *
  * Return: The error string.
  */
@@ -47,10 +41,10 @@ char *error_env(char **args)
 }
 
 /**
- * error_1 - Creates an error message for shellby_alias errors.
- * @args: An array of arguments passed to the command.
+ * error_1 - Crelias errors.
+ * @args: An arre command.
  *
- * Return: The error string.
+ * Return: The eing.
  */
 char *error_1(char **args)
 {
@@ -70,10 +64,10 @@ char *error_1(char **args)
 }
 
 /**
- * error_2_exit - Creates an error message for shellby_exit errors.
- * @args: An array of arguments passed to the command.
+ * error_2_exit - by_exit errors.
+ * @args: An array command.
  *
- * Return: The error string.
+ * Return: The err
  */
 char *error_2_exit(char **args)
 {
@@ -104,10 +98,10 @@ char *error_2_exit(char **args)
 }
 
 /**
- * error_2_cd - Creates an error message for shellby_cd errors.
- * @args: An array of arguments passed to the command.
+ * error_2_cd - Creates an ers.
+ * @args: An array of argumend.
  *
- * Return: The error string.
+ * Return: The err
  */
 char *error_2_cd(char **args)
 {
@@ -143,10 +137,10 @@ char *error_2_cd(char **args)
 }
 
 /**
- * error_2_syntax - Creates an error message for syntax errors.
- * @args: An array of arguments passed to the command.
+ * error_2_syntax - Creates a.
+ * @args: An array of argumend.
  *
- * Return: The error string.
+ * Return: The error 
  */
 char *error_2_syntax(char **args)
 {

@@ -1,21 +1,15 @@
-/*
- * File: builtin.c
- * Auth: Alex Yu
- *       Brennan D Baraban
- */
-
-#include "shell.h"
+#include "main.h"
 int (*get_builtin(char *command))(char **args, char **front);
 int shellby_exit(char **args, char **front);
 int shellby_cd(char **args, char __attribute__((__unused__)) **front);
 int shellby_help(char **args, char __attribute__((__unused__)) **front);
 
 /**
- * get_builtin - Matches a command with a corresponding
- *               shellby builtin function.
- * @command: The command to match.
+ * get_builtin - onding
+ *               
+ * @command: The  match.
  *
- * Return: A function pointer to the corresponding builtin.
+ * Return: A func builtin.
  */
 int (*get_builtin(char *command))(char **args, char **front)
 {
@@ -40,16 +34,13 @@ int (*get_builtin(char *command))(char **args, char **front)
 }
 
 /**
- * shellby_exit - Causes normal process termination
- *                for the shellby shell.
- * @args: An array of arguments containing the exit value.
- * @front: A double pointer to the beginning of args.
+ * shellby_exit -  terminatio
+ * @args: An array .
+ * @front: A doubleng of args.
+ * Return: If there.
+ *         O/w - ex
  *
- * Return: If there are no arguments - -3.
- *         If the given exit value is invalid - 2.
- *         O/w - exits with the given status value.
- *
- * Description: Upon returning -3, the program exits back in the main function.
+ * Description: Upo
  */
 int shellby_exit(char **args, char **front)
 {
@@ -89,9 +80,9 @@ int shellby_exit(char **args, char **front)
  * @args: An array of arguments.
  * @front: A double pointer to the beginning of args.
  *
- * Return: If the given string is not a directory - 2.
- *         If an error occurs - -1.
- *         Otherwise - 0.
+ * Return: tory - 2.
+ *        
+ *        
  */
 int shellby_cd(char **args, char __attribute__((__unused__)) **front)
 {
@@ -166,12 +157,12 @@ int shellby_cd(char **args, char __attribute__((__unused__)) **front)
 }
 
 /**
- * shellby_help - Displays information about shellby builtin commands.
- * @args: An array of arguments.
- * @front: A pointer to the beginning of args.
+ * shellby_help - Displays ids.
+ * @args: Anuments.
+ * @front: Abeginning of args.
  *
- * Return: If an error occurs - -1.
- *         Otherwise - 0.
+ * Return: Iurs - -1.
+ *         Oe - 0.
  */
 int shellby_help(char **args, char __attribute__((__unused__)) **front)
 {

@@ -1,20 +1,14 @@
-/*
- * File: errors.c
- * Auth: Alex Yu
- *       Brennan D Baraban
- */
-
-#include "shell.h"
+#include "main.h"
 
 int num_len(int num);
 char *_itoa(int num);
 int create_error(char **args, int err);
 
 /**
- * num_len - Counts the digit length of a number.
- * @num: The number to measure.
+ * num_len - C of a number.
+ * @num: The n.
  *
- * Return: The digit length.
+ * Return: The.
  */
 int num_len(int num)
 {
@@ -40,10 +34,10 @@ int num_len(int num)
 }
 
 /**
- * _itoa - Converts an integer to a string.
- * @num: The integer.
+ * _itoa - Con.
+ * @num: The i.
  *
- * Return: The converted string.
+ * Return: Theng.
  */
 char *_itoa(int num)
 {
@@ -79,11 +73,11 @@ char *_itoa(int num)
 
 
 /**
- * create_error - Writes a custom error message to stderr.
- * @args: An array of arguments.
- * @err: The error value.
+ * create_error - tsage to stderr.
+ * @args: An ants.
+ * @err: The ee.
  *
- * Return: The error value.
+ * Return: Thee.
  */
 int create_error(char **args, int err)
 {

@@ -1,20 +1,14 @@
-/*
- * File: environ.c
- * Auth: Alex Yu
- *       Brennan D Baraban
- */
-
-#include "shell.h"
+#include "main.h"
 
 char **_copyenv(void);
 void free_env(void);
 char **_getenv(const char *var);
 
 /**
- * _copyenv - Creates a copy of the environment.
+ * _copyenv - Cr environment.
  *
- * Return: If an error occurs - NULL.
- *         O/w - a double pointer to the new copy.
+ * Return: IfULL.
+ *         O/ - a double popy.
  */
 char **_copyenv(void)
 {
@@ -48,7 +42,7 @@ char **_copyenv(void)
 }
 
 /**
- * free_env - Frees the the environment copy.
+ * free_env - opy.
  */
 void free_env(void)
 {
@@ -60,11 +54,11 @@ void free_env(void)
 }
 
 /**
- * _getenv - Gets an environmental variable from the PATH.
- * @var: The name of the environmental variable to get.
+ * _getenv - Ge PATH.
+ * @var: The nariable to get.
  *
- * Return: If the environmental variable does not exist - NULL.
- *         Otherwise - a pointer to the environmental variable.
+ * Return: If NULL.
+ *         Othariable.
  */
 char **_getenv(const char *var)
 {
