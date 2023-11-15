@@ -6,12 +6,12 @@ void print_alias(alias_t *alias);
 
 /**
  * shellby_alias -  specific
- * 
+ *
  * @args: An guments.
  * @front: A  args.
  *
  * Return: If1.
- *         
+ *
  */
 int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 {
@@ -55,7 +55,7 @@ int shellby_alias(char **args, char __attribute__((__unused__)) **front)
 /**
  * set_alias - Wi new value,
  * @var_name: Name
- * @value: Value 
+ * @value: Value
  */
 void set_alias(char *var_name, char *value)
 {
@@ -90,7 +90,7 @@ void set_alias(char *var_name, char *value)
 }
 
 /**
- * print_alias - Prints 
+ * print_alias - Prints
  * @alias: Point
  */
 void print_alias(alias_t *alias)
@@ -111,7 +111,7 @@ void print_alias(alias_t *alias)
 }
 /**
  * replace_aliases - Go
- * 
+ *
  * @args: 2D
  *
  * Return: 2D point

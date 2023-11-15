@@ -10,10 +10,9 @@ int shellby_unsetenv(char **args, char __attribute__((__unused__)) **front);
  * @front: A er to the beginning of args.
  *
  * Return:  -1.
- *	   
  *
  * Description: Prints one
- */ 
+ */
 int shellby_env(char **args, char __attribute__((__unused__)) **front)
 {
 	int index;
@@ -40,7 +39,7 @@ int shellby_env(char **args, char __attribute__((__unused__)) **front)
  *              args[2] is the value variable to.
  *
  * Return: occurs - -1.
- *         
+ *
  */
 int shellby_setenv(char **args, char __attribute__((__unused__)) **front)
 {

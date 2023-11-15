@@ -6,7 +6,7 @@ int shellby_help(char **args, char __attribute__((__unused__)) **front);
 
 /**
  * get_builtin - onding
- *               
+ *
  * @command: The  match.
  *
  * Return: A func builtin.
@@ -80,9 +80,7 @@ int shellby_exit(char **args, char **front)
  * @args: An array of arguments.
  * @front: A double pointer to the beginning of args.
  *
- * Return: tory - 2.
- *        
- *        
+ * Return: tory - 2
  */
 int shellby_cd(char **args, char __attribute__((__unused__)) **front)
 {

@@ -140,7 +140,7 @@ char *error_2_cd(char **args)
  * error_2_syntax - Creates a.
  * @args: An array of argumend.
  *
- * Return: The error 
+ * Return: The error
  */
 char *error_2_syntax(char **args)
 {
