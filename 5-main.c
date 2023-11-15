@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 /**
  * main - implement shell
  * Return: 0 if succesful

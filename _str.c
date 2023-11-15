@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include "main.h"
+#include "shell.h"
 
 /**
  * _strcpy - copies src str to dest str
