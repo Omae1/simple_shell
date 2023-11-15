@@ -16,8 +16,8 @@
 #define EXIT -3
 
 extern char **environ;
-extern char *name;
-extern int hist;
+char *name;
+int hist;
 
 /**
 * struct list_s - A new struct type defining a linked list.
