@@ -2,11 +2,11 @@
 int main()
 {
 	char input[MAX_INPUT_SIZE];
+	ssize_t bytesRead = read(STDIN_FILENO, input, sizeof(input));
 
 	while (1)
 	{
 		write(STDOUT_FILENO, "Shell> ", sizeof("Shell> ") - 1);
-		ssize_t bytesRead = read(STDIN_FILENO, input, sizeof(input));
 
 		if (bytesRead == -1)
 		{

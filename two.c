@@ -1,6 +1,6 @@
 #include "main.h"
 
-int lineInterpreter(int argc, char *argv[]);
+int lineInterpreter(int argc __attribute__((unused)), char *argv[] __attribute__((unused)));
 /**
 *writeError- handles file related errors
 *@filename: the string to be copied
@@ -30,10 +30,13 @@ void writeError(const char *filename)
 *@argv: array of strings
 *Return: 0 (success)
 */
-int lineInterpreter(int argc, char *argv[])
+int lineInterpreter(int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 {
 	char input[MAX_INPUT_SIZE];
 	char *args[MAX_ARGS];
+	ssize_t input_size;
+	int num_args = 0;
+	char *token = strtok(input, " ");
 
 	while (1)
 	{
@@ -42,7 +45,6 @@ int lineInterpreter(int argc, char *argv[])
 	write(STDOUT_FILENO, prompt, sizeof(prompt) - 1);
 	fflush(stdout);
 
-	ssize_t input_size;
 
 	input_size = read(STDIN_FILENO, input, sizeof(input));
 	if (input_size <= 0)
@@ -51,8 +53,6 @@ int lineInterpreter(int argc, char *argv[])
 	}
 	input[input_size - 1] = '\0';
 
-	int num_args = 0;
-	char *token = strtok(input, " ");
 
 	while (token != NULL && num_args < MAX_ARGS - 1)
 	{

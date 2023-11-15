@@ -3,18 +3,21 @@
 void line_interpreter(void);
 /**
 *line_interpreter - takes command as inputs and translates
-*Return: Nothing
+Return: Nothing
 */
 void line_interpreter(void)
 {
+	size_t input_size = 0;
+	char *args[2];
+	pid_t child_pid = fork();
+	ssize_t input_length;
+	char *input = NULL;
+	
 	while (1)
 	{
-		write(STDOUT_FILENO, "#simpleShell > ", sizeof("#simpleShell > "));
+		write(STDOUT_FILENO, "#simpleShell > ", sizeof("#simpleShell > ") - 1);
 		fflush(stdout);
 
-		size_t input_size = 0;
-		ssize_t input_length;
-		char *input = NULL;
 
 		input_length = getline(&input, &input_size, stdin);
 		if (input_length < 0)
@@ -36,11 +39,9 @@ void line_interpreter(void)
 	if (input_length > 0 && input[input_length - 1] == '\n')
 		input[input_length - 1] = '\0';
 
-	char *args[2];
 
 	args[0] = input;
 	args[1] = NULL;
-	pid_t child_pid = fork();
 
 	if (child_pid == -1)
 	{

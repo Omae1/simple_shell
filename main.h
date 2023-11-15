@@ -27,7 +27,7 @@ extern char **environ;
 
 char *_strchr(char *s, char c);
 void line_interpreter(void);
-int lineInterpreter(int argc, char *argv[]);
+int lineInterpreter(int argc __attribute__((unused)), char *argv[] __attribute__((unused)));
 void exit_shell(void);
 void writeError(const char *filename);
 char *_strcat(char *dest, const char *src);
