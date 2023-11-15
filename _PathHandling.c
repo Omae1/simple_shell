@@ -21,6 +21,7 @@ int custom_tokenize(char *input, char *args[], int max_args)
 {
 int num_args = 0;
 char *token = strtok(input, " ");
+
 while (token != NULL && num_args < max_args - 1)
 {
 args[num_args] = token;
@@ -51,6 +52,7 @@ return (0);
  */
 int customShell(int argc, char *argv[])
 {
+
 char input[MAX_INPUT_SIZE];
 char *args[MAX_ARGS];
 int num_args;
